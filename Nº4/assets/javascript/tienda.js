@@ -254,17 +254,17 @@ inputEdad.oninput = (e) => {
 
       let btnVermouth = document.getElementById("btn-caractVermouth");
       btnVermouth.onmouseover = () =>
-        crearElementoCaracteristicas(desestructurar(productos[1]), "div-caractVermouth");
+        crearElementoCaracteristicas(desestructurar(agregarPropiedad(productos[1])), "div-caractVermouth");
       btnVermouth.onmouseout = () => eliminarElementoCaracteristicas("elemento-creado");
 
       let btnBonarda = document.getElementById("btn-caractBonarda");
       btnBonarda.onmouseover = () =>
-        crearElementoCaracteristicas(desestructurar(productos[2]), "div-caractBonarda");
+        crearElementoCaracteristicas(desestructurar(agregarPropiedad(productos[2])), "div-caractBonarda");
       btnBonarda.onmouseout = () => eliminarElementoCaracteristicas("elemento-creado");
 
       let btnViognier = document.getElementById("btn-caractViognier");
       btnViognier.onmouseover = () =>
-        crearElementoCaracteristicas(desestructurar(productos[3]), "div-caractViognier");
+        crearElementoCaracteristicas(desestructurar(agregarPropiedad(productos[3])), "div-caractViognier");
       btnViognier.onmouseout = () => eliminarElementoCaracteristicas("elemento-creado");
 
       let productoConDescuento = document.getElementById("img");
